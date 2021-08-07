@@ -2,7 +2,7 @@ volumes:
   mongodb_volume:
 
 services:
-  device-monitoring:
+  notificator:
     build: NotificationService
     restart: always
     ports:
