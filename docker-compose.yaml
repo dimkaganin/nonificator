@@ -6,7 +6,7 @@ services:
     build: NotificationService/
     restart: always
     ports:
-      - 127.0.0.1:8080:8080
+      - 8080:8080
     environment:
       - TZ=Europe\Samara
       - MONGO_DB_ADDR=mongodb

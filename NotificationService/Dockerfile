@@ -5,6 +5,8 @@ WORKDIR /usr/src/app/
 
 COPY . /usr/src/app/
 
+EXPOSE 8080
+
 RUN apt-get update && apt-get install -y libmcrypt-dev \
     mysql-client libmagickwand-dev --no-install-recommends \
     && pecl install imagick \
